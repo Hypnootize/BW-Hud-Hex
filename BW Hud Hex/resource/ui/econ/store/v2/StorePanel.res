@@ -96,19 +96,19 @@
 	"FooterLine"
 	{
 		"ControlName"	"EditablePanel"
-			"fieldName"		"FooterLine"
-			"xpos"			"0"
-			"ypos"			"420"
-			"zpos"			"7"
-			"wide"			"f0"
-			"tall"			"2"
-			"visible"		"1"
-			"enabled"		"1"
-			"pinCorner"		"0"
-			"autoResize"	"0"
-			"PaintBackgroundType"	"2"
-			"border"				"NoBorder"
-			"bgcolor_override"		"GrayBG"
+		"fieldName"		"FooterLine"
+		"xpos"			"0"
+		"ypos"			"420"
+		"zpos"			"7"
+		"wide"			"f0"
+		"tall"			"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"pinCorner"		"0"
+		"autoResize"	"0"
+		"PaintBackgroundType"	"2"
+		"border"				"NoBorder"
+		"bgcolor_override"		"GrayBG"
 	}				
 	
 	"Sheet"
@@ -120,6 +120,7 @@
 		"tabwidth"		"240"
 		"tabheight"		"34"
 		"transition_time" "0"
+		"yoffset"		"6"
 		
 		"HeaderLine"
 		{
@@ -141,7 +142,7 @@
 		
 		"tabskv"
 		{
-			"textinsetx"		"40"
+			"textinsetx"		"10"
 			"font"				"HudFontMediumBold"
 			"selectedcolor"		"WhiteS"
 			"unselectedcolor"	"GrayText"	
