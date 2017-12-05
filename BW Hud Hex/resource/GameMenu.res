@@ -1,21 +1,9 @@
 "GameMenu" [$WIN32]
 {
-	"QuickplayButton"
+	"TrainingButton"
 	{
-		"label" "CASUAL" 
-		"command" "play_casual"
-		"OnlyAtMenu" "0"
-	}
-	"PlayPVEButton"
-	{
-		"label" "MVM" 
-		"command" "play_mvm"
-		"OnlyAtMenu" "0"
-	}
-	"PlayCompetitive"
-	{
-		"label" "COMPETITIVE" 
-		"command" "play_competitive"
+		"label" "TRAINING" 
+		"command" "offlinepractice"
 		"OnlyAtMenu" "0"
 	}
 	"ServerBrowserButton"
