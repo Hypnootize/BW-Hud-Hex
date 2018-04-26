@@ -24,6 +24,11 @@
 			"visible"		"1"
 			"proportionaltoparent"	"1"
 
+			if_mini
+			{
+				"xpos"		"cs-0.5-228"
+			}
+
 			"ParticleEffects"
 			{
 				"0"
@@ -118,6 +123,11 @@
 
 			"paintbackground"	"0"
 
+			if_mini
+			{
+				"xpos"		"cs-0.5-228"
+			}
+
 			"ParticleEffects"
 			{
 				"0"
@@ -178,11 +188,10 @@
 		"xpos"			"rs1"
 		"ypos"			"20"
 		"zpos"			"-1"
-		"wide"			"400"
+		"wide"			"f0"
 		"tall"			"f40"
 		"visible"		"1"
 		"PaintBackgroundType"	"2"
-		"border"		"NoBorder"
 		"proportionaltoparent"	"1"
 
 		if_mini
@@ -191,65 +200,107 @@
 			"ypos"			"cs-0.5"
 			"tall"			"35"
 			"wide"			"505"
-			"border"		"MainMenuBGBorder"
 		}
 
 		"NameLabel"
 		{
 			"ControlName"	"Label"
 			"fieldName"		"NameLabel"
-			"xpos"			"0"
-			"ypos"			"0"
-			"wide"			"110"
-			"zpos"			"100"
-			"tall"			"20"
-			"visible"		"0"
-			"enabled"		"1"
-			"font"			"solFontBold10"
-			"AllCaps"		"1"
-			"fgcolor_override"	"180 180 180 200"
-			"textAlignment"	"west"
-			"labelText"		"%name%"
-			"proportionaltoparent"	"1"
-
-			if_mini
-			{
-				"visible"		"0"
-				"font"			"HudFontSmallishBold"
-				"xpos"			"65"
-				"ypos"			"5"
-				"wide"			"f0"
-				"AllCaps"		"0"
-			}
-		}
-
-		"LevelLabel"
-		{
-			"ControlName"	"Label"
-			"fieldName"		"LevelLabel"
-			"xpos"			"0"
-			"ypos"			"0"
+			"xpos"			"192"
+			"ypos"			"30"
 			"wide"			"70"
 			"zpos"			"100"
 			"tall"			"20"
 			"visible"		"1"
 			"enabled"		"1"
 			"font"			"solFontBold10"
-			"AllCaps"		"1"
 			"fgcolor_override"	"180 180 180 200"
-			"textAlignment"	"west"
-			"labelText"		"%level%"
+			"textAlignment"	"center"
+			"labelText"		"%name%"
+			"proportionaltoparent"	"1"
+			"AllCaps"		"1"
+
+			if_mini
+			{
+				"visible"	"0"
+			}
+		}
+
+		"DescLine1"
+		{
+			"ControlName"	"CAutoFittingLabel"
+			"fieldName"		"DescLine1"
+			"xpos"			"65"
+			"ypos"			"19"
+			"wide"			"0"			//70
+			"zpos"			"100"
+			"tall"			"20"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"solFontBold10"
+			"fgcolor_override"	"180 180 180 200"
+			"textAlignment"	"center"
+			"labelText"		"%desc1%"
 			"proportionaltoparent"	"1"
 
 			if_mini
 			{
 				"xpos"	"67"
 				"ypos"	"4"
-				"wide"			"f0"
-				"font"			"HudFontSmallestBold"
+				"wide"	"195"
+				"font"	"HudFontSmallestBold"
+				"fgcolor_override"	"TanLight"
+				"textAlignment"	"north-west"
+			}
+
+			"fonts"
+			{
+				"0"		"solFontBold10"
+				"1"		"solFontBold10"
+				"2"		"solFontBold10"
+			}
+		}
+
+		"DescLine2"
+		{
+			"ControlName"	"CAutoFittingLabel"
+			"fieldName"		"DescLine2"
+			"xpos"			"65"
+			"ypos"			"25"
+			"wide"			"70"
+			"zpos"			"100"
+			"tall"			"20"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"solFontBold10"
+			"fgcolor_override"	"180 180 180 200"
+			"textAlignment"	"center"
+			"labelText"		"%desc2%"
+			"proportionaltoparent"	"1"
+			"AllCaps"		"1"
+
+			if_mini
+			{
+				"xpos"	"67"
+				"ypos"	"4"
+				"wide"	"195"
+				"font"	"HudFontSmallestBold"
 				"fgcolor_override"	"TanLight"
 				"textAlignment"	"north-west"
 				"AllCaps"		"0"
+			}
+
+			"fonts"
+			{
+				"0"		"solFontBold10"
+				"1"		"solFontBold10"
+				"2"		"solFontBold10"
+			}
+
+			"colors"
+			{
+				"1"		"CreditsGreen"
+				"2"		"TanLight"
 			}
 		}
 
@@ -257,9 +308,9 @@
 		{
 			"ControlName"	"EditablePanel"
 			"fieldName"		"StatsContainer"
-			"xpos"			"120"
-			"ypos"			"-34"
-			"wide"			"70"		//190
+			"xpos"			"64"
+			"ypos"			"0"
+			"wide"			"70"
 			"tall"			"f0"
 			"proportionaltoparent"	"1"
 
@@ -344,7 +395,7 @@
 						"fieldName"		"ProgressBar"
 						"xpos"			"0"
 						"ypos"			"cs-0.5"
-						"wide"			"f0"
+						"wide"			"0"
 						"tall"			"f-2"
 						"zpos"			"1"
 						"proportionaltoparent"	"1"
@@ -352,6 +403,11 @@
 
 						"fgcolor_override"	"20 20 20 180"
 						"bgcolor_override"	"0 0 0 0"
+						
+						if_mini
+						{
+							"wide"			"f0"
+						}
 					}
 
 					"ContinuousProgressBar"
@@ -374,11 +430,16 @@
 						"fieldName"		"Frame"
 						"xpos"			"0"
 						"ypos"			"0"
-						"wide"			"f0"
+						"wide"			"0"
 						"tall"			"f0"
 						"zpos"			"5"
 						"proportionaltoparent"	"1"
 						"border"		"InnerShadowBorderThin"
+						
+						if_mini
+						{
+							"wide"			"f0"
+						}
 					}
 				}
 			}
