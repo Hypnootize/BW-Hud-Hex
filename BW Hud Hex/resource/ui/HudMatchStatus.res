@@ -284,11 +284,12 @@
 		if_match
 		{
 			"zpos"				"5"
+			"ypos"				"1"	
 		}
 		
 		"TimePanelValue"
         {
-            "ControlName"		"CExLabel"
+            "ControlName"	"CExLabel"
             "fieldName"		"TimePanelValue"
             "font"			"solFontRegular21"
             "fgcolor"		"210 210 210 255"
@@ -299,13 +300,12 @@
 		    "tall"			"22"
             "visible"		"1"
             "enabled"		"1"
-            "textAlignment"		"center"
+            "textAlignment"	"center"
             "labelText"		"0:00"
 			
 			if_match
 			{
-				 "font"			"solFontRegular12"
-				 "ypos"			"5"
+				 "font"		"solFontRegular12"
 			}
 		}	
 	}
