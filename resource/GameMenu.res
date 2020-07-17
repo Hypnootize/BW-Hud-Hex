@@ -1,110 +1,145 @@
 "GameMenu" [$WIN32]
 {
-	"TrainingButton"
-	{
-		"label" "TRAINING" 
-		"command" "offlinepractice"
-		"OnlyAtMenu" "0"
-	}
 	"ServerBrowserButton"
 	{
-		"label" "SERVERS" 
-		"command" "OpenServerBrowser"
-		"OnlyAtMenu" "0"
-	} 
-	"ReplayBrowserButton"
-	{
-		"label" "REPLAYS"
-		"command" "engine replay_reloadbrowser"		
+		"label" 		"SERVERS" 
+		"command" 		"OpenServerBrowser"
 	}
-	"SteamWorkshopButton"
+	
+	"CreateServerButton"
 	{
-		"label" "WORKSHOP"
-		"command" "engine OpenSteamWorkshopDialog"
+		"label" 		"CREATE"
+		"command" 		"OpenCreateMultiplayerGameDialog"
 	}
+	
+	"CharacterSetupButton"
+	{
+		"label" 		"ITEMS"
+		"command" 		"engine open_charinfo"
+	}
+	
+	"TrainingButton"
+	{
+		"label" 		"TRAINING" 
+		"command" 		"offlinepractice"
+	}
+	
+	"GeneralStoreButton"
+	{
+		"label" 		"STORE"
+		"command" 		"engine open_store"
+	}
+	
+	"SettingsButton"
+	{
+		"label" 		"OPTIONS"
+		"command" 		"OpenOptionsDialog"
+	}
+	
+	"QuitButton"
+	{
+		"label" 		"QUIT"
+		"command" 		"engine replay_confirmquit"
+		"OnlyAtMenu" 	"1"
+	}
+	
+	"DisconnectButton"
+	{
+		"label" 		"DISCONNECT"
+		"command" 		"engine disconnect"
+		"OnlyInGame"	"1"
+	}
+	
 	"ConsoleButton"
 	{
-		"label" "CONSOLE"
-		"command" "engine con_enable 1;toggleconsole"
-	} 
-	"DEMOUI"
-	{
-		"label" "DEMOUI"
-		"command" "engine demoui"
+		"label" 		"CONSOLE"
+		"command" 		"engine con_enable 1;toggleconsole"
 	}
+	
+	"DemouiButton"
+	{
+		"label" 		"DEMOUI"
+		"command" 		"engine demoui"
+	}
+	
+	"ToggleScoreboard"
+	{
+		"label"			"SCOREBOARD"
+		"command" 		"engine toggle cl_hud_minmode"
+	}
+	
+	"ReplayBrowserButton"
+	{
+		"label" 		"REPLAYS"
+		"command" 		"engine replay_reloadbrowser"		
+	}
+	
+	"SteamWorkshopButton"
+	{
+		"label" 		"WORKSHOP"
+		"command" 		"engine OpenSteamWorkshopDialog"
+	}
+	
 	"HomeServer"
 	{
-		"label" "7"
-		"command" "engine connect ;password "
-        "tooltip" "Match Server"
+		"label" 		"7"
+		"command" 		"engine connect ;password "
+        "tooltip" 		"Match Server"
 	}
 	"FaveServer"
 	{
-		"label" "6"
-		"command" "engine connect "
-        "tooltip" "Favourite Server"
-	}
-	"ToggleScoreboard"
-	{
-		"label" "SCOREBOARD"
-		"command" "engine toggle cl_hud_minmode"
-	}
-	"QuitButton"
-	{
-		"label" "QUIT"
-		"command" "engine replay_confirmquit"
-		"OnlyAtMenu" "1"
+		"label" 		"6"
+		"command" 		"engine connect "
+        "tooltip" 		"Favourite Server"
 	}
 	
-	// These buttons get positioned by the MainMenuOverride.res	
-	"CreateServerButton"
+	"NewUserForumsButton"
 	{
-		"label" "#GameUI_GameMenu_CreateServer"
-		"command" "OpenCreateMultiplayerGameDialog"
-		"OnlyAtMenu" "1"
-		"tooltip" "Create Server"
+		"label"			""
+		"command"		"view_newuser_forums"
+		"subimage" 		"glyph_tutorial"
+		"tooltip" 		"New Users Forums"
 	}
-	"GeneralStoreButton"
+	"ReportBugButton"
 	{
-		"label" "STORE"
-		"command" "engine open_store"
+		"label"			""
+		"command"		"engine bug"
+		"subimage" 		"glyph_bug"
+		"tooltip" 		"Report a Bug"
 	}
-	"CharacterSetupButton"
+	"AchievementsButton"
 	{
-		"label" "ITEMS"
-		"command" "engine open_charinfo"
+		"label"			""
+		"command"		"OpenAchievementsDialog"
+		"subimage" 		"glyph_achievements"
+		"tooltip" 		"Achievements"
 	}
-    
-	// These buttons are only shown while in-game
-	// and also are positioned by the .res file
-	"DisconnectButton"
+	"CommentaryButton"
 	{
-		"label" "DISCONNECT"
-		"command" "engine disconnect"
-		"OnlyInGame"	"1"
+		"label"			""
+		"command"		"OpenLoadSingleplayerCommentaryDialog"
+		"subimage" 		"glyph_forums"
+		"tooltip" 		"Developer Commentary"
 	}
 	"CallVoteButton"
 	{
 		"label"			""
 		"command"		"callvote"
-		"OnlyAtMenu" "0"
-		"subimage" "icon_checkbox"
-		"tooltip" "#MMenu_CallVote"
+		"subimage" 		"icon_checkbox"
+		"tooltip" 		"Call a Vote"
 	}
 	"MutePlayersButton"
 	{
 		"label"			""
 		"command"		"OpenPlayerListDialog"
-		"OnlyInGame"	"1"
-		"subimage" "glyph_muted"
-		"tooltip" "#MMenu_MutePlayers"
+		"subimage" 		"glyph_muted"
+		"tooltip" 		"Mute a Player"
 	}
-	"RequestCoachButton"
+	"ReportPlayerButton"
 	{
 		"label"			""
-		"command"		"engine cl_coach_find_coach"
-		"OnlyAtMenu" "0"
-		"subimage" "icon_whistle"
-		"tooltip" "#MMenu_RequestCoach"
+		"command"		"OpenReportPlayerDialog"
+		"subimage"		"glyph_alert"
+		"tooltip"		"Report a Player"
 	}
 }

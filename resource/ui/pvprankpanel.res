@@ -185,11 +185,11 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"BGPanel"
-		"xpos"			"rs1"
-		"ypos"			"20"
+		"xpos"			"0"
+		"ypos"			"0"
 		"zpos"			"-1"
 		"wide"			"f0"
-		"tall"			"f40"
+		"tall"			"480"
 		"visible"		"1"
 		"PaintBackgroundType"	"2"
 		"proportionaltoparent"	"1"
@@ -206,19 +206,18 @@
 		{
 			"ControlName"	"Label"
 			"fieldName"		"NameLabel"
-			"xpos"			"192"
-			"ypos"			"30"
-			"wide"			"70"
+			"xpos"			"65"
+			"ypos"			"5"
+			"wide"			"0"
 			"zpos"			"100"
 			"tall"			"20"
 			"visible"		"1"
 			"enabled"		"1"
-			"font"			"solFontBold10"
-			"fgcolor_override"	"180 180 180 200"
-			"textAlignment"	"center"
+			"font"			"HudFontSmallishBold"
+			"fgcolor_override"	"TanLight"
+			"textAlignment"	"north-west"
 			"labelText"		"%name%"
 			"proportionaltoparent"	"1"
-			"AllCaps"		"1"
 
 			if_mini
 			{
@@ -230,34 +229,37 @@
 		{
 			"ControlName"	"CAutoFittingLabel"
 			"fieldName"		"DescLine1"
-			"xpos"			"65"
-			"ypos"			"19"
-			"wide"			"0"			//70
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"100"
 			"zpos"			"100"
-			"tall"			"20"
+			"tall"			"32"
 			"visible"		"1"
 			"enabled"		"1"
-			"font"			"solFontBold10"
+			"font"			"solFontBold12"
 			"fgcolor_override"	"180 180 180 200"
 			"textAlignment"	"center"
 			"labelText"		"%desc1%"
 			"proportionaltoparent"	"1"
+			"AllCaps"	"1"
 
 			if_mini
 			{
 				"xpos"	"67"
 				"ypos"	"4"
 				"wide"	"195"
-				"font"	"HudFontSmallestBold"
+				"tall"	"20"
+				"font"			"HudFontSmallestBold"
 				"fgcolor_override"	"TanLight"
 				"textAlignment"	"north-west"
+				"AllCaps"	"0"
 			}
 
 			"fonts"
 			{
-				"0"		"solFontBold10"
+				"0"		"solFontBold12"
 				"1"		"solFontBold10"
-				"2"		"solFontBold10"
+				"2"		"solFontBold9"
 			}
 		}
 
@@ -266,35 +268,34 @@
 			"ControlName"	"CAutoFittingLabel"
 			"fieldName"		"DescLine2"
 			"xpos"			"65"
-			"ypos"			"25"
-			"wide"			"70"
+			"ypos"			"29"
+			"wide"			"195"
 			"zpos"			"100"
 			"tall"			"20"
 			"visible"		"1"
 			"enabled"		"1"
-			"font"			"solFontBold10"
-			"fgcolor_override"	"180 180 180 200"
-			"textAlignment"	"center"
+			"font"			"solFontBold12"
+			"fgcolor_override"	"TanLight"
+			"textAlignment"	"north-west"
 			"labelText"		"%desc2%"
 			"proportionaltoparent"	"1"
-			"AllCaps"		"1"
 
 			if_mini
 			{
 				"xpos"	"67"
 				"ypos"	"4"
 				"wide"	"195"
-				"font"	"HudFontSmallestBold"
+				"tall"	"20"
+				"font"			"HudFontSmallestBold"
 				"fgcolor_override"	"TanLight"
 				"textAlignment"	"north-west"
-				"AllCaps"		"0"
 			}
 
 			"fonts"
 			{
-				"0"		"solFontBold10"
+				"0"		"solFontBold12"
 				"1"		"solFontBold10"
-				"2"		"solFontBold10"
+				"2"		"solFontBold9"
 			}
 
 			"colors"
@@ -308,9 +309,9 @@
 		{
 			"ControlName"	"EditablePanel"
 			"fieldName"		"StatsContainer"
-			"xpos"			"64"
+			"xpos"			"rs1-5"
 			"ypos"			"0"
-			"wide"			"70"
+			"wide"			"0"
 			"tall"			"f0"
 			"proportionaltoparent"	"1"
 
@@ -341,7 +342,7 @@
 					"ypos"			"rs1"
 					"zpos"			"0"
 					"wide"			"100"
-					"tall"			"0"
+					"tall"			"20"
 					"visible"		"1"
 					"enabled"		"1"
 					"font"			"ItemFontAttribSmall"
@@ -349,11 +350,6 @@
 					"textAlignment"	"south-west"
 					"labelText"		"%current_xp%"
 					"proportionaltoparent"	"1"
-					
-					if_mini
-					{
-						"tall" "20"
-					}
 				}
 
 				"NextLevelXPLabel"
@@ -364,7 +360,7 @@
 					"ypos"			"rs1"
 					"zpos"			"0"
 					"wide"			"100"
-					"tall"			"0"
+					"tall"			"20"
 					"visible"		"1"
 					"enabled"		"1"
 					"font"			"ItemFontAttribSmall"
@@ -372,11 +368,6 @@
 					"textAlignment"	"south-east"
 					"labelText"		"%next_level_xp%"
 					"proportionaltoparent"	"1"
-					
-					if_mini
-					{
-						"tall" "20"
-					}
 				}
 
 				"ProgressBarsContainer"
@@ -395,7 +386,7 @@
 						"fieldName"		"ProgressBar"
 						"xpos"			"0"
 						"ypos"			"cs-0.5"
-						"wide"			"0"
+						"wide"			"f0"
 						"tall"			"f-2"
 						"zpos"			"1"
 						"proportionaltoparent"	"1"
@@ -403,11 +394,6 @@
 
 						"fgcolor_override"	"20 20 20 180"
 						"bgcolor_override"	"0 0 0 0"
-						
-						if_mini
-						{
-							"wide"			"f0"
-						}
 					}
 
 					"ContinuousProgressBar"
@@ -430,16 +416,11 @@
 						"fieldName"		"Frame"
 						"xpos"			"0"
 						"ypos"			"0"
-						"wide"			"0"
+						"wide"			"f0"
 						"tall"			"f0"
 						"zpos"			"5"
 						"proportionaltoparent"	"1"
 						"border"		"InnerShadowBorderThin"
-						
-						if_mini
-						{
-							"wide"			"f0"
-						}
 					}
 				}
 			}
